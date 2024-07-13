@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    background-color: black;
+    scroll-behavior: smooth;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+
+
+/*  * =================== Navbar =================== */
+
+#navbar{
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    left: -260px;
+}
+
+
+/*  * =================== Main Page =================== */
+
+.meal-layer{
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    transform: translatey(100%);
+    transition: all .5s;
+}
+
+.meal:hover .meal-layer{
+    transform: translatey(0%);
+   
+}
