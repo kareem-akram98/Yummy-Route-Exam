@@ -19,11 +19,14 @@
 <body class="position-relative">
 
 
-
+    <!--^ ====================== Loader ======================  -->
+    <!-- <div class="loading">
+        <div class="loader"></div>
+    </div> -->
     <!--^ ====================== Navbar ======================  -->
-    <div id="navbar" class="min-vh-100 position-fixed">
+    <aside id="navbar" class="min-vh-100 position-fixed">
         <div class="row">
-            <div class="col-sm-10 bg-black ">
+            <div class="col-sm-10 bg-black blackNav  ">
                 <div class="inner min-vh-100  text-white d-flex flex-column justify-content-between ps-3 py-3">
                     <ul class="list-unstyled ">
                         <li class="py-2 pointer">Search</li>
@@ -34,9 +37,9 @@
                     </ul>
                     <div class="d-flex flex-column">
                         <div class="icons">
-                            <i class="fa-brands fa-facebook"></i>
-                            <i class="fa-brands fa-twitter"></i>
-                            <i class="fa-solid fa-globe"></i>
+                            <i class="pointer fa-brands fa-facebook"></i>
+                            <i class="pointer fa-brands fa-twitter"></i>
+                            <i class="pointer fa-solid fa-globe"></i>
                         </div>
                         <p>
                             Copyright Â© 2019 All RightsReserved.
@@ -44,33 +47,32 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-2 bg-white  ">
+            <div class="col-sm-2 bg-white navWhite ">
                 <div class="inner min-vh-100 d-flex flex-column justify-content-between align-items-center ">
                     <div class="py-3">
                         <img src="./images/logo.png" class="w-100" alt="logo">
                     </div>
-                    <i class="fa-solid fa-bars fs-2"></i>
-                    <i class="fa-solid fa-close fs-2 d-none"></i>
+                    <i id="openAside" class="fa-solid fa-bars fs-2 pointer"></i>
                     <div class="py-3 fs-5 d-flex flex-column justify-content-center align-items-center gap-2">
-                        <i class="fa-solid fa-globe"></i>
-                        <i class="fa-solid fa-share-nodes"></i>
+                        <i class="fa-solid fa-globe pointer"></i>
+                        <i class="fa-solid fa-share-nodes pointer"></i>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </aside>
     <!-- ^====================== main page ======================  -->
-    <div id="mainPage" class="container d-none">
-        <div id="displayData" class="row py-5 g-4">
-            <div class="col-md-3">
+    <div id="mainPage" class="container ">
+        <div id="displayHomeData" class="row py-5 g-4">
+            <!-- <div class="col-md-3">
                 <div class="meal position-relative overflow-hidden rounded-3">
                     <img src="./images/1.jpg" style="width:100%;" alt=""    >
                     <div class="meal-layer position-absolute bg-white bg-opacity-50 d-flex fw-bolder align-items-center">
                         <h3>tamiya</h3>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-3">
+            </div> -->
+            <!-- <div class="col-md-3">
                 <div class="meal position-relative overflow-hidden rounded-3">
                     <img src="./images/2.jpg" style="width:100%;" alt=""    >
                     <div class="meal-layer position-absolute bg-white bg-opacity-50 d-flex fw-bolder align-items-center">
@@ -101,18 +103,18 @@
                         <h3>tamiya</h3>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
-<!-- ^====================== Search ======================  -->
-    <div id="search" class="container py-5 d-none">
+    <!-- ^====================== Search ======================  -->
+    <div id="searchٍSection" class="container py-5 d-none">
         <div class="d-flex justify-content-center align-items-center py-3">
             <input type="text" placeholder="search by name" class="form-control mx-2 bg-transparent text-white">
             <input type="text" placeholder="search by first litter" class="form-control mx-2 bg-transparent text-white">
         </div>
         <div id="displayInSeaarch">
             <div id="displayData" class="row py-5 g-4">
-                <div class="col-md-3">
+                <!-- <div class="col-md-3">
                     <div>
                         <img src="./images/1.jpg" style="width:100%;" alt="" class="rounded-3">
                     </div>
@@ -136,100 +138,40 @@
                     <div>
                         <img src="./images/5.jpg" style="width:100%;" alt="" class="rounded-3">
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
-<!-- ^====================== Categories ======================  -->
-<div id="category" class="container d-none">
-    <div id="displayData" class="row py-5 g-4">
-        <div class="col-md-3">
-            <div class="meal position-relative overflow-hidden rounded-3">
+    <!-- ^====================== Categories ======================  -->
+    <div id="categorySection" class="container ">
+        <div id="displayCategories" class="row py-5 g-4">
+            <!-- <div class="col-md-3">
+            <div id="" class="meal position-relative overflow-hidden rounded-3">
                 <img src="./images/beef.png" style="width:100%;" alt=""    >
                 <div class="meal-layer position-absolute bg-white bg-opacity-75 d-flex fw-bolder align-items-center flex-column ">
                     <h3>tamiya</h3>
                     <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
                 </div>
             </div>
-        </div>
-        <div class="col-md-3">
-            <div class="meal position-relative overflow-hidden rounded-3">
-                <img src="./images/dessert.png" style="width:100%;" alt=""    >
-                <div class="meal-layer position-absolute bg-white bg-opacity-75 d-flex fw-bolder align-items-center flex-column ">
-                    <h3>tamiya</h3>
-                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="meal position-relative overflow-hidden rounded-3">
-                <img src="./images/lamb.png" style="width:100%;" alt=""    >
-                <div class="meal-layer position-absolute bg-white bg-opacity-75 d-flex fw-bolder align-items-center flex-column ">
-                    <h3>tamiya</h3>
-                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="meal position-relative overflow-hidden rounded-3">
-                <img src="./images/miscellaneous.png" style="width:100%;" alt=""    >
-                <div class="meal-layer position-absolute bg-white bg-opacity-75 d-flex fw-bolder align-items-center flex-column ">
-                    <h3>tamiya</h3>
-                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="meal position-relative overflow-hidden rounded-3">
-                <img src="./images/pasta.png" style="width:100%;" alt=""    >
-                <div class="meal-layer position-absolute bg-white bg-opacity-75 d-flex fw-bolder align-items-center flex-column ">
-                    <h3>tamiya</h3>
-                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                </div>
-            </div>
+        </div> -->
         </div>
     </div>
-</div>
 
-<!-- ^====================== Area ======================  -->
-<div id="area" class="container d-none">
-<div id="displayData" class="row py-5 g-4">
-    <div class="col-md-3">
+    <!-- ^====================== Area ======================  -->
+    <div id="areaSection" class="container d-none">
+        <div id="displayArea" class="row g-4">
+            <!-- <div class="col-md-3">
         <div class="area d-flex justify-content-center align-items-center flex-column text-white">
            <i class="fa-solid fa-house-laptop fa-4x"></i>
            <h3 class="fs-1">American</h3>
         </div>
-    </div>
-    <div class="col-md-3">
-        <div class="area d-flex justify-content-center align-items-center flex-column text-white">
-           <i class="fa-solid fa-house-laptop fa-4x"></i>
-           <h3 class="fs-1">American</h3>
+    </div> -->
         </div>
     </div>
-    <div class="col-md-3">
-        <div class="area d-flex justify-content-center align-items-center flex-column text-white">
-           <i class="fa-solid fa-house-laptop fa-4x"></i>
-           <h3 class="fs-1">American</h3>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="area d-flex justify-content-center align-items-center flex-column text-white">
-           <i class="fa-solid fa-house-laptop fa-4x"></i>
-           <h3 class="fs-1">American</h3>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="area d-flex justify-content-center align-items-center flex-column text-white">
-           <i class="fa-solid fa-house-laptop fa-4x"></i>
-           <h3 class="fs-1">American</h3>
-        </div>
-    </div>
-</div>
-</div>
-<!-- ^====================== Ingredients ======================  -->
-<div id="ingredients" class="container d-none">
-    <div id="displayData" class="row py-5 g-4">
-        <div class="col-md-3">
+    <!-- ^====================== Ingredients ======================  -->
+    <div id="ingredientsSection" class="container d-none">
+        <div id="displayIngredients" class="row py-5 g-4">
+            <!-- <div class="col-md-3">
             <div class="area d-flex justify-content-center align-items-center flex-column text-white">
                <i class="fa-solid fa-drumstick-bite fa-4x"></i>
                <h3 class="fs-1">American</h3>
@@ -273,57 +215,61 @@
                 adipisicing elit. Perspiciatis unde inventore nemo, soluta rem
                  sit tempora qui aliquid obcaecati sapiente.</p>
             </div>
+        </div> -->
         </div>
     </div>
+    <!-- ^====================== Contact Us ======================  -->
+    <div id="contactSection" class="min-vh-100 d-flex justify-content-center align-items-center  d-none">
+        <div class="container w-75 text-center">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <input id="nameInput" type="text" class="form-control inputHolder" placeholder="Enter your name">
+                    <div id="nameAlert" class="alert alert-danger w-100 mt-2 d-none">
+                        Special characters and numbers not allowed
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input id="emailInput" type="email" class="form-control inputHolder" placeholder="Enter your eamil">
+                    <div id="emailAlert" class="alert alert-danger w-100 mt-2 d-none">
+                        Email not valid *exemple@yyy.zzz
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input id="phoneInput" type="text" class="form-control inputHolder" placeholder="Enter your phone">
+                    <div id="phoneAlert" class="alert alert-danger w-100 mt-2 d-none">
+                        Enter valid Phone Number
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input id="ageInput" type="text" class="form-control inputHolder" placeholder="Enter your age">
+                    <div id="ageAlert" class="alert alert-danger w-100 mt-2 d-none">
+                        Enter valid age
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input id="passwordInput" type="password" class="form-control inputHolder"
+                        placeholder="Enter your password">
+                    <div id="passwordAlert" class="alert alert-danger w-100 mt-2 d-none">
+                        At least 8 characters long ,Contains at least one lowercase letter ,
+                        Contains at least one uppercase letter,Contains at least one digit,
+                        Contains at least one special character (@, $, !, %, *, ?, or &)
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input id="repasswordInput" type="password" class="form-control inputHolder"
+                        placeholder="repassword">
+                    <div id="repasswordAlert" class="alert alert-danger w-100 mt-2 d-none">
+                        Enter valid repassword
+                    </div>
+                </div>
+            </div>
+            <button id="submitBtn" disabled class="btn btn-outline-danger px-2 mt-3">
+                Submit</button>
+        </div>
     </div>
-<!-- ^====================== Contact Us ======================  -->
-<div id="contact" class="min-vh-100 d-flex justify-content-center align-items-center d-none">
-    <div class="container w-75 text-center">
-    <div class="row g-4">
-        <div class="col-md-6">
-            <input id="nameInput" type="text" class="form-control" placeholder="Enter your name">
-            <div id="nameAlert" class="alert alert-danger w-100 mt-2 d-none">
-                Special characters and numbers not allowed
-            </div>
-        </div>
-        <div class="col-md-6">
-            <input id="eamilInput" type="email" class="form-control" placeholder="Enter your eamil">
-            <div id="eamilAlert" class="alert alert-danger w-100 mt-2 d-none">
-                Email not valid *exemple@yyy.zzz
-            </div>
-        </div>
-        <div class="col-md-6">
-            <input id="phoneInput" type="text" class="form-control" placeholder="Enter your phone">
-            <div id="phoneAlert" class="alert alert-danger w-100 mt-2 d-none">
-                Enter valid Phone Number
-            </div>
-        </div>
-        <div class="col-md-6">
-            <input id="ageInput" type="text" class="form-control" placeholder="Enter your age">
-            <div id="ageAlert" class="alert alert-danger w-100 mt-2 d-none">
-                Enter valid age
-            </div>
-        </div>
-        <div class="col-md-6">
-            <input id="passwordInput" type="password" class="form-control" placeholder="Enter your password">
-            <div id="passwordAlert" class="alert alert-danger w-100 mt-2 d-none">
-                Enter valid password *Minimum eight characters, at least one letter and one number:*
-            </div>
-        </div>
-        <div class="col-md-6">
-            <input id="repasswordInput" type="password" class="form-control" placeholder="repassword">
-            <div id="repasswordAlert" class="alert alert-danger w-100 mt-2 d-none">
-                Enter valid repassword
-            </div>
-        </div>
-    </div>
-        <button id="submitBtn" disabled class="btn btn-outline-danger px-2 mt-3">
-            Submit</button>
-    </div>
-</div>
-<!-- ^====================== Meal description  ======================  -->
-<div id="mealDesc" class="container d-none">
-    <div class="row py-5 g-4 text-white">
+    <!-- ^====================== Meal description  ======================  -->
+    <div id="mealDesc" class="container d-none">
+        <!-- <div class="row py-5 g-4 text-white">
         <div class="col-md-4">
             <img src="./images/sandwich.jpg" class="w-100 rounded-3" alt="">
             <h2 class="mt-3 fw-bolder">Big Mac</h2>
@@ -350,9 +296,10 @@
            <a target="_blank" class="btn btn-danger" href="">Youtube</a>
         </div>
 
+    </div> -->
     </div>
-</div>
-<!-- ^====================== Links ======================  -->
+    <!-- ^====================== Links ======================  -->
+    <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
